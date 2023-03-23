@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ResultActivity"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:letterSpacing="0.04"
+        android:text="CREATE AN ACCOUNT"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:src="@drawable/online_page_rafiki__2_"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_account_circle_24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Photo"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="signup user"
+            android:src="@drawable/baseline_edit_24"
+            android:tint="@color/colorWhite" />
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="28dp"
+            android:background="@color/colorGray"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter UserName"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                android:letterSpacing="0.1"
+                android:includeFontPadding="false"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/signupEDTXT"
+                android:textSize="18sp"
+                android:hint="Kavitha"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorGray"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:importantForAutofill="no"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/colorGray"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="signup email"
+            android:src="@drawable/baseline_email_24"
+            android:tint="@color/colorWhite" />
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="28dp"
+            android:background="@color/colorGray"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter your mail ID"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                android:letterSpacing="0.1"
+                android:includeFontPadding="false"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/signupemailEDTXT"
+                android:textSize="18sp"
+                android:hint="kav123@gmail.com"
+                android:inputType="textWebEmailAddress"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorGray"
+                android:includeFontPadding="false"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:importantForAutofill="no"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/colorGray"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/baseline_key_24"
+            android:tint="@color/colorWhite"
+            android:contentDescription="signup password"/>
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="28dp"
+            android:background="@color/colorGray"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter your Password"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                android:letterSpacing="0.1"
+                android:includeFontPadding="false"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/signuppwdEDTXT"
+                android:textSize="18sp"
+                android:hint="Pa$123"
+                android:inputType="textWebPassword"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorGray"
+                android:includeFontPadding="false"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:importantForAutofill="no"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/colorGray"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupBTN"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_background"
+        android:text="SIGN UP"
+        android:textSize="15sp"
+        app:backgroundTint="#22D3AB"
+        android:textColor="@color/colorPrimary"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="1dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Click here to "
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginTXT"
+            android:text="Log In"
+            android:textColor="@color/colorGreen"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+</LinearLayout>

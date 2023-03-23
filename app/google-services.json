@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "910885307893",
+    "project_id": "neom-bf875",
+    "storage_bucket": "neom-bf875.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910885307893:android:62f8ed6bf7d4ce00310cbc",
+        "android_client_info": {
+          "package_name": "com.example.neom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910885307893-6ld35je8bua2spoumigsn1fputl3amk6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.neom",
+            "certificate_hash": "1437395a267d9531b5a75953765be8773ed2f9e8"
+          }
+        },
+        {
+          "client_id": "910885307893-tgim48afp0h91ru4m4l38ib4b7pmt4r4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqQJ2D9QvF4_mnh2_-CsP3U1pzMp-YqkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910885307893-tgim48afp0h91ru4m4l38ib4b7pmt4r4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
