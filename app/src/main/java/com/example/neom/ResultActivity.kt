@@ -14,9 +14,9 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val username = intent.getStringExtra("UserName")
         auth = FirebaseAuth.getInstance()
         val email = intent.getStringExtra("email")
-        val username = intent.getStringExtra("username")
         binding.emailTXT.text = email
         binding.usernameTXT.text = username
         binding.logoutBTN.setOnClickListener{

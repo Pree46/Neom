@@ -49,11 +49,11 @@ class MainActivity : AppCompatActivity() {
                         val intent = Intent(this, ResultActivity::class.java)
                         startActivity(intent)
                     }else{
-                        Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT)
+                        Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
                     }
                 }
             }else{
-                Toast.makeText(this, "Empty fields are not allowed!!", Toast.LENGTH_SHORT)
+                Toast.makeText(this, "Empty fields are not allowed!!", Toast.LENGTH_SHORT).show()
             }
         }
         binding.GoogleSignInBTN.setOnClickListener{

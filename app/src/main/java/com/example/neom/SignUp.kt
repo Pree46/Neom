@@ -17,20 +17,22 @@ class SignUp : AppCompatActivity() {
         setContentView(binding.root)
         firebaseAuth = FirebaseAuth.getInstance()
         binding.signupBTN.setOnClickListener {
-            val email = binding.signupemailEDTXT.toString()
-            val username = binding.signupEDTXT.toString()
-            val pass = binding.signuppwdEDTXT.toString()
-            if(email.isNotEmpty() && pass.isNotEmpty() && username.isNotEmpty()){
+
+            if(binding.signupemailEDTXT.text.isNotEmpty() && binding.signuppwdEDTXT.text.isNotEmpty() && binding.signupEDTXT.text.isNotEmpty()){
+                val email = binding.signupemailEDTXT.toString()
+                val name = binding.signupEDTXT.toString()
+                val pass = binding.signuppwdEDTXT.toString()
                 firebaseAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener{
                     if(it.isSuccessful){
                         val intent = Intent(this, MainActivity::class.java)
+                        intent.putExtra("username",name)
                         startActivity(intent)
                     }else{
-                        Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT)
+                        Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
                     }
                 }
             }else{
-                Toast.makeText(this, "Empty fields are not allowed!!", Toast.LENGTH_SHORT)
+                Toast.makeText(this, "Empty fields are not allowed!!", Toast.LENGTH_SHORT).show()
             }
         }
         binding.loginTXT.setOnClickListener{
